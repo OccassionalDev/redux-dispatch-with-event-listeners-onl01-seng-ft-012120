@@ -18,3 +18,5 @@ render() {
   let container = document.getElementById('container')
   container.textContent = stte.count
 }
+
+dispatch({ type: '@@INIT' })
