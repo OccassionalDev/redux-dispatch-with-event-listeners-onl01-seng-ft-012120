@@ -1,4 +1,5 @@
 let state;
+let button = document.getElementById('button')
 
 function reducer(state = { count: 0 }, action){
   switch (action.type) {
@@ -20,3 +21,7 @@ render() {
 }
 
 dispatch({ type: '@@INIT' })
+
+button.addEventListener('click', () => {
+  dispatch({ type: 'INCREASE_COUNT' })
+})
