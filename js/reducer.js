@@ -10,5 +10,10 @@ function reducer(state, action){
 }
 
 function dispatch(action) {
-  
+  state = reducer(state, action)
+  render()
+}
+
+render() {
+  document.body
 }
