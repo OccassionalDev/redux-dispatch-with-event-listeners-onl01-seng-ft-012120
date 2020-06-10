@@ -15,5 +15,6 @@ function dispatch(action) {
 }
 
 render() {
-  document.body
+  let container = document.getElementById('container')
+  container.textContent = stte.count
 }
